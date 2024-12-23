@@ -59,7 +59,27 @@ try:
     search_box.click()
     print("Dupa.2")
     search_box.send_keys("T Shirt")
-    print("Dupa3") #dotad dziala
+    print("Dupa3")
+    search_box.send_keys(Keys.RETURN)
+    print("Dupa4")#dotad dziala
+
+    #search for exact product
+    product=WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located((By.XPATH, "//a[@class='no-style' and contains(text(), 'STAR TEE (black)')]"))
+    )
+    product.click()
+    print("Dupa5")
+
+    #check the price
+    price=WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located((By.CSS_SELECTOR,"span.money[data-currency-pln]"))
+    )
+    print("Dupa6")
+    price_of_element=price.get_attribute("data-currency-pln")
+    print(f"Regular price of the STAR TEE (black): {price_of_element}")
+
+    #check for sale
+
 
 
 except TimeoutException as e:
