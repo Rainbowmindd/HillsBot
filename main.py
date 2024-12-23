@@ -75,9 +75,6 @@ try:
     price_of_element=price.get_attribute("data-currency-pln")
     print(f"Regular price of the STAR TEE (black): {price_of_element}")
 
-    #check for sale
-
-
 
 except TimeoutException as e:
     print("Loading took too long")
