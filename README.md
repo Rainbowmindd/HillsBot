@@ -9,7 +9,7 @@ This is a web scraper built using Python and Selenium for automating the process
 - **Browser Automation**: Uses Selenium WebDriver to interact with the website, mimicking human behavior (clicking buttons, scrolling, etc.).
 
 ## Technologies Used:
-- **Python 3.x**
+- **Python 3.9.6**
 - **Selenium**: For web automation and scraping.
 - **ChromeDriver**: Browser automation with the Google Chrome browser.
 - **webdriver-manager**: For managing the ChromeDriver version.
@@ -17,15 +17,16 @@ This is a web scraper built using Python and Selenium for automating the process
 ## How to Use:
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/hillswear-web-scraper.git
+   git clone https://github.com/Rainbowmindd/HillsBot
    ```
 2. Install the required dependencies:
    ```
-   pip install -r requirements.txt
+   pip install selenium
+   pip install webdriver-manager
    ```
-3. Run the script:
+2. Run the script:
    ```
-   python scraper.py
+   python3 main.py
    ```
 
 ## Functionality:
